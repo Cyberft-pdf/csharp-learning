@@ -14,13 +14,12 @@ namespace ConsoleApp1
             Random random = new Random();
 
             int num = random.Next(1, 7);
+            double num2 = random.NextDouble();
 
-            Console.WriteLine(num);
+            Console.WriteLine(num + num2);
 
 
             Console.ReadKey();
-
-
 
 
 
