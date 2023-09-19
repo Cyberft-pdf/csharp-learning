@@ -5,7 +5,6 @@ internal class Program
 
          //This code is simple calculator of this you can buy with your budget
 
-
         Console.WriteLine("|----------------------------------------|");
         Console.WriteLine(" ");
         Console.WriteLine("   Ahoj, vítej ve kalkulačce rozpočtu");
