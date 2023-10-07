@@ -19,21 +19,21 @@ namespace ConsoleApp7
 
                 Console.WriteLine("------------------------------------------");
                 Console.WriteLine(" ");
-                Console.WriteLine("Vítej v kalkulačce kvadratické rovnice");
+                Console.WriteLine("Welcome to the quadratic equation calculator");
                 Console.WriteLine(" ");
                 Console.WriteLine("------------------------------------------");
 
 
                 Console.WriteLine(" ");
-                Console.Write("Zadej a:");
+                Console.Write("Enter a:");
                 double a = Convert.ToDouble(Console.ReadLine());
 
                 Console.WriteLine(" ");
-                Console.Write("Zadej b:");
+                Console.Write("Enter b:");
                 double b = Convert.ToDouble(Console.ReadLine());
 
                 Console.WriteLine(" ");
-                Console.Write("Zadej c:");
+                Console.Write("Enter c:");
                 double c = Convert.ToDouble(Console.ReadLine());
 
 
@@ -43,7 +43,7 @@ namespace ConsoleApp7
                 if (diskriminant < 0)
                 {
                     Console.WriteLine(" ");
-                    Console.WriteLine("Není možné vypočítat");
+                    Console.WriteLine("It is not possible to calculate");
 
 
                 }
@@ -53,17 +53,17 @@ namespace ConsoleApp7
                     Console.WriteLine("----------------------------------------------");
                     Console.WriteLine(" ");
 
-                    Console.WriteLine("Diskriminant je kladný můžu počítat");
+                    Console.WriteLine("The discriminant is positive, I can count");
                     Console.WriteLine(" ");
 
                     double vypocet_X = ((-b - Math.Sqrt(diskriminant)) / 2*a);
                     double vypocet_X2 = ((-b + Math.Sqrt(diskriminant)) / 2 * a);
                     Console.WriteLine(" ");
 
-                    Console.WriteLine("kladný vysledek je " + vypocet_X);
+                    Console.WriteLine("positive result is " + vypocet_X);
                     Console.WriteLine(" ");
 
-                    Console.WriteLine("záporný vysledek je " + vypocet_X2);
+                    Console.WriteLine("the negative result is " + vypocet_X2);
 
                 }
 
@@ -72,11 +72,11 @@ namespace ConsoleApp7
 
                     Console.WriteLine("----------------------------------------------");
                     Console.WriteLine(" ");
-                    Console.WriteLine("Dikrimant je roven nule");
+                    Console.WriteLine("The discriminant is equal to zero");
                     double vypocet_X3 = (-b / 2 * a);
                     Console.WriteLine(" ");
 
-                    Console.WriteLine("výsledek roven " + vypocet_X3);
+                    Console.WriteLine("result equal " + vypocet_X3);
                     Console.WriteLine(" ");
 
                     Console.WriteLine("----------------------------------------------");
