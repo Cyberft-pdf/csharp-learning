@@ -12,10 +12,18 @@ namespace DU1_2C_Steinerova
     {
         static void Main(string[] args)
         {
+            //
 
+
+            do
+            {
+
+            Console.Clear();
             string line = new string('=', Console.WindowWidth);
             Console.WriteLine(line);
 
+
+            //----------UVOD TEXT´--ZACATEK
             string text = "Hello! Welcom to time units converter \n\n\n\n";
 
             for (int i = 0; i <= text.Length; i++)
@@ -29,25 +37,26 @@ namespace DU1_2C_Steinerova
             Console.WriteLine(" ");
 
 
-            Console.SetCursorPosition(46, 13);
+            Console.SetCursorPosition(46, 12);
             Console.Write("What is your name?: ");
 
             string odpoved_jmeno = Console.ReadLine();
 
-            Console.SetCursorPosition(51, 16);
+            Console.SetCursorPosition(51, 14);
             Console.WriteLine($"Hello {odpoved_jmeno}!");
             Thread.Sleep(1000);
 
             Console.WriteLine(" ");
 
-            Console.SetCursorPosition(37, 18);
+            Console.SetCursorPosition(37, 16);
             Console.Write("Zadejte počet a časovou jenotku např. 48h\n");
-            Console.SetCursorPosition(35, 20);
+            Console.SetCursorPosition(35, 18);
             Console.Write("(d = den, h = hodina ,m = minuta, s = sekunda): ");
             String odpoved_pocet = Convert.ToString(Console.ReadLine());
+             //----------UVOD TEXT--ZACATEK
 
 
-            switch (odpoved_pocet)
+                switch (odpoved_pocet)
             {
                 // ošetření mínusového čísla 
                 case String zapor when zapor.Contains("-"):
@@ -132,7 +141,11 @@ namespace DU1_2C_Steinerova
                     Console.WriteLine($"To je {den_vypocet_d} (den)");
                     break;
 
-            }
+                }
+                Console.SetCursorPosition(0, 28);
+                Console.WriteLine("Chtěl by jsi pokračovat Y/N");
+            } while (Console.ReadLine().ToUpper() == "Y");
+
 
             Console.ReadKey();
 
