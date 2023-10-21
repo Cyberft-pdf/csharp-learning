@@ -10,7 +10,7 @@ namespace OOP
     {
         static void Main(string[] args)
         {
-            // string interpolation = vypisování pomocí {}
+            // string interpolation = vypisování pomocí {} do string literal
 
             String jmeno = "Cyber";
             String prijmeni = "Ft";
