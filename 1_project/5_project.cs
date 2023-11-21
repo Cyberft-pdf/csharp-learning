@@ -6,7 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace DU1_2C_Steinerova
+namespace DU1_2C_
 {
     internal class Program
     {
