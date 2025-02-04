@@ -12,7 +12,7 @@ namespace trenink_pole
     {
         static void Main(string[] args)
         {
-            //Write a C# Sharp program that stores elements in an array and prints them.
+            //Write a C# Sharp program that stores elements in an array and prints .
             /*
             int[] cisla = { 1, 2, 3, 4, 5, 6, };
 
